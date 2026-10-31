@@ -1,9 +1,12 @@
+/* 감 테스트 앱과 같은 노란 테마. 글자색은 모두 바탕 위에서 대비 4.5:1 이상 */
 :root {
-  --bg: #f6f7f9; --panel: #fff; --ink: #14171c; --body: #3a404b; --dim: #7c838f; --line: #e3e6eb;
-  --accent: #4f46e5; --accent-soft: #eef0ff; --warn: #b26a00; --warn-soft: #fdf3e3;
+  color-scheme: light;
+  --bg: #ffe98a; --bg2: #fff4c4; --panel: #fff; --ink: #1f1a0e; --body: #3d3420; --dim: #6b5f3f; --line: #e6cf72;
+  --accent: #3346d3; --accent-soft: #e8ebff; --warn: #9a5800; --warn-soft: #fff4d6; --tint: #fff4c4;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--body); line-height: 1.6;
+body { margin: 0; background: radial-gradient(1200px 700px at 50% -10%, var(--bg2), var(--bg)); min-height: 100dvh;
+  color: var(--body); line-height: 1.6;
   font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
 #app { max-width: 980px; margin: 0 auto; padding: 28px 16px 56px; }
 .hero { padding: 8px 0 22px; }
@@ -18,7 +21,7 @@ h1 { font-size: 30px; color: var(--ink); letter-spacing: -.8px; line-height: 1.2
 .card { display: grid; grid-template-columns: 116px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line);
   border-radius: 14px; padding: 12px; box-shadow: 0 1px 2px rgba(20,23,28,.04); }
 .card img, .noimg { width: 116px; height: 145px; object-fit: cover; object-position: top; border-radius: 10px;
-  border: 1px solid var(--line); background: #eef0f3; }
+  border: 1px solid var(--line); background: var(--tint); }
 .noimg { display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--dim); }
 .card.empty { opacity: .6; border-style: dashed; }
 .wk { font-size: 11px; font-weight: 800; color: var(--accent); letter-spacing: .06em; }
@@ -27,7 +30,7 @@ h1 { font-size: 30px; color: var(--ink); letter-spacing: -.8px; line-height: 1.2
 .judge { font-size: 13px; background: var(--warn-soft); color: #6b4a10; border-radius: 8px; padding: 7px 9px; }
 .judge b { display: block; font-size: 11px; color: var(--warn); margin-bottom: 2px; }
 .ai { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
-.ai span { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 6px; background: #f1f2f4; color: var(--body); }
+.ai span { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 6px; background: var(--tint); color: var(--body); }
 .go { font-size: 13px; font-weight: 800; color: var(--accent); text-decoration: none; }
 .go.off { color: var(--dim); font-weight: 600; }
 .proposal { margin-top: 26px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px 18px; }
