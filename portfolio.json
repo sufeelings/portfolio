@@ -8,7 +8,10 @@
      "ai": ["Claude Code", "v0", "Perplexity"], "url": "https://gam-test-nine.vercel.app/", "img": "img/w1.jpg"},
     {"week": 2, "title": "사내 IT 요청 분류기 — 빈 폴더에서", "line": "IT 요청 한 줄을 넣으면 칸 · 긴급도 · 이유가 나옵니다. 문장과 정답은 직접 만들었습니다",
      "judgment": "보안을 다른 칸으로 놓치는 것을 가장 나쁜 실수로 정하고 따로 셌다. 정확도 70%인 규칙은 보안 4건을 모두 놓쳤고, AI는 0건을 놓쳤다",
-     "ai": ["Claude Code", "Gemini"], "url": "https://my-classifier-sooty.vercel.app/", "img": ""}
+     "ai": ["Claude Code", "Gemini"], "url": "https://my-classifier-sooty.vercel.app/", "img": ""},
+    {"week": 3, "title": "엑셀 정리기", "line": "엉망인 엑셀·CSV를 끌어다 놓으면 증상을 찾고, 내가 정한 규칙대로 정리해 바꾼 것을 한 줄씩 남깁니다. 파일은 브라우저를 떠나지 않습니다",
+     "judgment": "상담시간 규칙을 «80을 넘으면 초로 본다»에서 «180을 넘으면 초로 보고 60으로 나눈다»로 다시 정했다. 80은 이 파일의 가장 긴 상담에 맞춘 숫자라 다음 달에 80분이 넘는 상담이 오면 틀리게 나누기 때문이다. 대신 정리 스크립트 결과와 견주니 이 정리기는 이전 처리상태 줄 320줄 · 3분 이하 초 단위 전화 472줄 · 테스트 접수 45줄을 놓쳤다. Claude 없이 쓰는 동료에게 건네는 도구라 고치지 않고 한계로 알리고, 정확한 숫자는 정리 스크립트에 맡겼다",
+     "ai": ["Claude Code", "Google Colab"], "url": "https://cleaner-rose.vercel.app", "img": ""}
   ],
   "proposal": null
 }
